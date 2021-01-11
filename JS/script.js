@@ -2,9 +2,7 @@
 //DECK JS
  const SUITS = ["♠","♥","♣","♦"]
  const VALUES = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
- var sum = "12"
- var tax = "1.5"
- var newTotal = sum+tax
+
 class Deck{
      constructor(cards = newDeck()){
          this.cards = cards
@@ -32,14 +30,14 @@ class Deck{
      get colour(){
          return this.suit === "♠" || this.suit === "♣" ? 'black': 'red'
      }
-     getHTML(){
-         const cardDiv = document.createElement('div')
-         cardDiv.innerText=this.suit
-         cardDiv.classList.add("card",this.colour)
-         cardDiv.dataset.value = ${this.value}  ${this.suit}
-         return cardDiv
+    //  getHTML(){
+    //      const cardDiv = document.createElement('div')
+    //      cardDiv.innerText=this.suit
+    //      cardDiv.classList.add("card",this.colour)
+    //      cardDiv.dataset.value = ${this.value}  ${this.suit}
+    //      return cardDiv
        
-     }
+    //  }
  }
  
  
